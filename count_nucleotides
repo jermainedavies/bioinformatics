@@ -1,0 +1,23 @@
+# uses rosalind_dna.txt
+
+def count_nucleotides(filename):
+
+    a = 0
+    c = 0
+    g = 0
+    t = 0
+    with open(filename, "r") as opened_file:
+        for s in opened_file.read():
+            for x in s:
+                print(x)
+                if x == "A":
+                    a+=1
+                elif x == "C":
+                    c+=1
+                elif x == "T":
+                    t+=1
+                elif x == "G":
+                    g+=1
+        opened_file.close()
+        z = a,c,g,t
+        return z
