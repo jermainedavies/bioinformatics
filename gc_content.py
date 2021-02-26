@@ -1,3 +1,4 @@
+#uses rosalind_gc.txt
 def gc_content(filename):
 
     clean_list = []
